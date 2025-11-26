@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>helenol · Robotics & Real-World Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Robotics, perception, and mobile manipulation for construction and infrastructure maintenance."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="site-title">helenol</div>
+      <div class="site-subtitle">Robotics & real-world systems</div>
+    </header>
+
+    <main>
+      <section class="section">
+        <h1>Robotics, perception, and mobile manipulation</h1>
+        <p>
+          I work on making robots behave reliably in the kinds of environments
+          where things are rarely clean, static, or perfectly modelled.
+        </p>
+        <p>
+          I’m especially interested in
+          <strong>robust, safe mobile manipulation</strong> for
+          <strong>construction</strong> and
+          <strong>infrastructure maintenance</strong>: systems that can move,
+          sense, and manipulate in cluttered, changing spaces without needing
+          everything to be carefully staged in advance.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Some themes</h2>
+        <ul>
+          <li>
+            Connecting <strong>perception, mapping, and planning</strong> so
+            robots can act usefully in the real world, not just in carefully
+            controlled demos.
+          </li>
+          <li>
+            <strong>Mobile manipulation</strong> in semi-structured environments:
+            construction sites, industrial facilities, and infrastructure
+            corridors.
+          </li>
+          <li>
+            <strong>Safety and robustness</strong> in the presence of uncertainty,
+            disturbances, and imperfect sensors.
+          </li>
+          <li>
+            Making it easier to deploy robots for
+            <em>dull, dirty, and dangerous</em> tasks humans shouldn’t have to do.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Academic work</h2>
+        <p>
+          For publications and open-source projects related to mapping,
+          planning, and real-world robotics, see:
+        </p>
+        <p class="link-line">
+          <a href="https://helenol.github.io" target="_blank" rel="noopener">
+            helenol.github.io
+          </a>
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Contact</h2>
+        <p>
+          If you’d like to talk about real-world mobile manipulation, construction
+          and infrastructure use cases, or related research directions, feel
+          free to get in touch:
+        </p>
+        <p class="link-line">
+          <a href="mailto:helen@helenol.com">helen@helenol.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> helenol.</span>
+    </footer>
+  </div>
+
+  <script>
+    // Current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

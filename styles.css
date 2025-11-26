@@ -1,0 +1,136 @@
+/* Basic page layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  background: #f3f3f3;
+  color: #111111;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* "White piece of paper" container */
+.page {
+  max-width: 780px;
+  margin: 40px auto;
+  padding: 32px 22px 28px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+}
+
+@media (max-width: 720px) {
+  .page {
+    margin: 20px auto;
+    padding: 24px 16px 22px;
+    border-radius: 0;
+    box-shadow: none;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/* Header */
+.header {
+  margin-bottom: 28px;
+}
+
+.site-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.site-subtitle {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #777777;
+}
+
+/* Typography */
+main {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.section {
+  margin-bottom: 26px;
+}
+
+.section:last-of-type {
+  margin-bottom: 18px;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* Links */
+a {
+  color: #1f6feb;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.link-line a {
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  margin-top: 18px;
+  padding-top: 10px;
+  border-top: 1px solid #eeeeee;
+  font-size: 12px;
+  color: #777777;
+}
